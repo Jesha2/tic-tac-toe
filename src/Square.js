@@ -1,11 +1,11 @@
-import React, { userState } from "react";
+//import React from "react";
 
 const Square = (props) => {
 	console.log(props.squares);
 	console.log("player  " + props.player);
 
 	const handleClick = () => {
-		// 		Check if there is a value in props.squareValue
+		// 		Check if there is a value in props.squareValue, i.e if the square is filled or not, if filled, then we dont do anything. if the cell is not empty, we let the player enter and then check which player
 		// If there is no value, but the player state that is passed through props is true, change the value of props.squares at props.index to “X”, invoke the setSquares function from props passing the new squares array, and toggle the value of props.player
 		// Otherwise change the value at props.index to “O”, invoke props.setSquares with the new value of props.squares and toggle the value of props.player
 		if (!props.squareValue) {
